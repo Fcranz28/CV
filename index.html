@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franz Aguilar - CV Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <main class="main-container glass-panel">
+        <header class="tech-header">
+            <div class="header-content">
+                <h1 class="tech-title">PROFILE_VIEWER <span class="blink">_</span></h1>
+                <p class="subtitle">Franz Aguilar // Full Stack Developer</p>
+            </div>
+            <div class="status-indicator">
+                <span class="dot"></span> ONLINE
+            </div>
+        </header>
+
+        <nav class="controls-bar">
+            <div class="tabs">
+                <button class="tab-btn active" data-lang="es">
+                    <span class="icon">CV: 🇪🇸</span> ESPAÑOL
+                </button>
+                <button class="tab-btn" data-lang="en">
+                    <span class="icon">CV: 🇺🇸</span> ENGLISH
+                </button>
+            </div>
+            
+            <a id="download-btn" href="CV_Franz_Aguilar_ES.pdf" download="CV_Franz_Aguilar_ES.pdf" class="tech-btn download-btn">
+                Descargar CV (Español)
+            </a>
+        </nav>
+
+        <section class="preview-area">
+            <div class="frame-decoration top-left"></div>
+            <div class="frame-decoration top-right"></div>
+            <div class="frame-decoration bottom-left"></div>
+            <div class="frame-decoration bottom-right"></div>
+            
+            <iframe id="cv-preview" src="CV_Franz_Aguilar_ES.pdf#view=FitH" type="application/pdf" width="100%" height="100%">
+                <p>Your browser does not support PDFs. <a href="CV_Franz_Aguilar_ES.pdf">Download the PDF</a>.</p>
+            </iframe>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
